@@ -177,7 +177,14 @@
             grecaptcha.enterprise.ready(async () => {
     const token = await grecaptcha.enterprise.execute('6LevASInAAAAAGZ_yOmBqMDDTS5OSoCeSkqf3cd3', {action: 
     
-        $.ajax({
+     
+    
+    });
+    // IMPORTANT: The 'token' that results from execute is an encrypted response sent by
+    // reCAPTCHA Enterprise to the end user's browser.
+    // This token must be validated by creating an assessment.
+    // See https://cloud.google.com/recaptcha-enterprise/docs/create-assessment
+   $.ajax({
                 url: "https://script.google.com/macros/s/AKfycbzo74ilzigUcp2qgih5f0xZLqKhM6qwyJDTuD58v3rIVdV4hmB8-3z4DNzYB1aQROksUA/exec",
                 data: $("#submit-form").serialize(),
                 method: "post",
@@ -191,13 +198,6 @@
                 }
             })
     
-    
-    });
-    // IMPORTANT: The 'token' that results from execute is an encrypted response sent by
-    // reCAPTCHA Enterprise to the end user's browser.
-    // This token must be validated by creating an assessment.
-    // See https://cloud.google.com/recaptcha-enterprise/docs/create-assessment
-
 
 
   });
