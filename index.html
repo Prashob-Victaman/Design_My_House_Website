@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>designmyhouse</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LevASInAAAAAGZ_yOmBqMDDTS5OSoCeSkqf3cd3"></script>
+
+
+</head>
+
+<body>
+
+    <script>
+        const handleDownloadClick = () => {
+            // Redirect user to the Play Store download page
+            window.location.href = 'https://play.google.com/store/apps/details?id=com.victaman.designmyhouse';
+        };
+
+        function submitForm() {
+            // Get form data
+            var formData = new FormData(document.getElementById("myForm"));
+
+            // Create an AJAX request
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "process_form.php", true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+                    // Handle the response from the server
+                    if (xhr.responseText === "success") {
+                        alert("Thank you for your submission!");
+                        // Reset the form
+                        document.getElementById("myForm").reset();
+                    } else {
+                        alert("Oops! Something went wrong.");
+                    }
+                }
+            };
+
+            // Send the form data
+            xhr.send(formData);
+        }
+    </script>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary " id="Home">
+
+
+        <div class="container-fluid">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="DMH-Logo.png" alt="Bootstrap" width="300" height="80">
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row featurette d-flex justify-content-center align-items-center mx-4 my-4">
+        <div class="col-md-7 order-md-2">
+            <h1>Design My House</h1>
+            <p class="lead mx-auto my-4">
+                Design My House is the planning wing of SIPL (Sawna Infrabuild Private Limited). SIPL is a registered
+                construction company that provides complete housing solutions starting from Planning to Finishing
+                (Naksha se Nirman tak). SIPL has been reputedly in the market since 1999. Designmyhouse.app has an
+                innovative & expert team of Professional Architects/Engineers who are providing customer
+                satisfaction-oriented services with the undermentioned specifications:
+            </p>
+            <center>
+                <div className='buttonClass'>
+                    <button class="imageButton" onClick={handleDownloadClick}>
+                        <a href="https://play.google.com/store/apps/details?id=com.victaman.designmyhouse">
+                            <img src="https://github.com/avi-nas/designmyhouse/blob/gh-pages/123.png?raw=true"
+                                alt="App Screenshot" class='screenshot' /></a>
+                    </button>
+                </div>
+            </center>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto mg-fluid "
+                src="coverimage (2).png" alt="" style="border-radius: 4%;">
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="row featurette d-flex justify-content-center align-items-center my-6 mx-4">
+        <div class="col-md-7 ">
+            <center>
+                <div id="Contact">
+                    <div class="container my-4">
+                        <h1>Contact Us</h1>
+                        <p><a href="mailto:ask2designmyhouse@gmail.com"
+                                style="text-decoration: none; color: #ea3636;">ask2designmyhouse@gmail.com</a> </p>
+                        <p><a href="tel:+91-8409404033" style="text-decoration: none; color: #ea3636;">
+                                +91-8409404033</a></p>
+                        <!-- <div class="socialmedia">
+                        <a href="https://github.com/avi-nas" class="socialMedia"><img src="https://cdn-icons-png.flaticon.com/128/733/733553.png" class="socialMedia"></a>
+                        <a href="https://www.instagram.com/avi.__.bhardwaj/" class="socialMedia"><img src="https://cdn-icons-png.flaticon.com/128/174/174855.png" class="socialMedia"></a>
+                        <a href="https://www.linkedin.com/in/avinash-sharma-a5a664223/" class="socialMedia"><img src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png" class="socialMedia"></a>
+                    </div>
+                    <br>
+                    <a href="/index/AvinashResume.pdf" download=""><button type="button" class="btn btn-outline-danger"> Download
+                            Resume</button>
+                    </a> -->
+                    </div>
+                    <div class="b-example-divider"></div>
+                    <div class="b-example-divider"></div>
+
+
+                </div>
+            </center>
+        </div>
+        <div class="col-md-5">
+
+            <form action="" id="submit-form">
+
+                <div class="mb-3">
+                    <input placeholder="Name" name="name" type="text" class="form-control myIn"
+                        aria-describedby="emailHelp" required="">
+                </div>
+                <div class="mb-3">
+                    <input placeholder="Email" name="email" type="email" class="form-control myIn" id=""
+                        aria-describedby="emailHelp" required="">
+                </div>
+                <div class="mb-3">
+                    <input placeholder="Phone Number" name="contact" type="tel" class="form-control myIn" id=""
+                        aria-describedby="emailHelp" required="">
+                </div>
+                <div class="mb-3">
+                    <textarea placeholder="Your Massage" name="message" class="form-control myIn" id="" rows="6"
+                        required=""></textarea>
+                </div>
+                <button type="submit" class="btn btn-danger" style="width: 150px;">Submit</button>
+            </form>
+            <span id="msg" class="text-warning"></span>
+        </div>
+    </div>
+    <br>
+    <br>
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#Home" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="#About" class="nav-link px-2 text-muted">About</a></li>
+        </ul>
+        <p class="text-center text-muted">Designed And Developed by Victaman Services Pvt. Ltd</p>
+        <p class="text-center text-muted">©Copyright Sawna Infrabuild Pvt. Ltd 2023</p>
+
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $("#submit-form").submit((e) => {
+            e.preventDefault()
+            grecaptcha.enterprise.ready(async () => {
+    const token = await grecaptcha.enterprise.execute('6LevASInAAAAAGZ_yOmBqMDDTS5OSoCeSkqf3cd3', {action: 
+    
+        $.ajax({
+                url: "https://script.google.com/macros/s/AKfycbzo74ilzigUcp2qgih5f0xZLqKhM6qwyJDTuD58v3rIVdV4hmB8-3z4DNzYB1aQROksUA/exec",
+                data: $("#submit-form").serialize(),
+                method: "post",
+                success: function (response) {
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error: function (err) {
+                    alert("Something Error")
+                }
+            })
+    
+    
+    });
+    // IMPORTANT: The 'token' that results from execute is an encrypted response sent by
+    // reCAPTCHA Enterprise to the end user's browser.
+    // This token must be validated by creating an assessment.
+    // See https://cloud.google.com/recaptcha-enterprise/docs/create-assessment
+
+
+
+  });
+
+
+           
+        })
+    </script>
+</body>
+
+</html>
