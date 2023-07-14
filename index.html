@@ -9,7 +9,8 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LevASInAAAAAGZ_yOmBqMDDTS5OSoCeSkqf3cd3"></script>
+    <script
+        src="https://www.google.com/recaptcha/enterprise.js?render=6LevASInAAAAAGZ_yOmBqMDDTS5OSoCeSkqf3cd3"></script>
 
 
 </head>
@@ -142,7 +143,7 @@
                 </div>
                 <div class="mb-3">
                     <input placeholder="Phone Number" name="contact" type="tel" class="form-control myIn" id=""
-                        aria-describedby="emailHelp" required="">
+                        aria-describedby="emailHelp"        pattern="[0-9]{10}"  size="10"  required="">
                 </div>
                 <div class="mb-3">
                     <textarea placeholder="Your Massage" name="message" class="form-control myIn" id="" rows="6"
@@ -171,41 +172,38 @@
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
 
+
+
+        
     <script>
         $("#submit-form").submit((e) => {
             e.preventDefault()
             grecaptcha.enterprise.ready(async () => {
-    const token = await grecaptcha.enterprise.execute('6LevASInAAAAAGZ_yOmBqMDDTS5OSoCeSkqf3cd3', {action: 
-    
-     
-    
-    });
-    // IMPORTANT: The 'token' that results from execute is an encrypted response sent by
-    // reCAPTCHA Enterprise to the end user's browser.
-    // This token must be validated by creating an assessment.
-    // See https://cloud.google.com/recaptcha-enterprise/docs/create-assessment
-   $.ajax({
-                url: "https://script.google.com/macros/s/AKfycbzo74ilzigUcp2qgih5f0xZLqKhM6qwyJDTuD58v3rIVdV4hmB8-3z4DNzYB1aQROksUA/exec",
-                data: $("#submit-form").serialize(),
-                method: "post",
-                success: function (response) {
-                    alert("Form submitted successfully")
-                    window.location.reload()
-                    //window.location.href="https://google.com"
-                },
-                error: function (err) {
-                    alert("Something Error")
-                }
-            })
-    
+                const token = await grecaptcha.enterprise.execute('6LevASInAAAAAGZ_yOmBqMDDTS5OSoCeSkqf3cd3', { action: 'submit' }).then(
+                    function (token) {
+                        // Add your logic to submit to your backend server here.
+                        $.ajax({
+                            url: "https://script.google.com/macros/s/AKfycbzo74ilzigUcp2qgih5f0xZLqKhM6qwyJDTuD58v3rIVdV4hmB8-3z4DNzYB1aQROksUA/exec",
+                            data: $("#submit-form").serialize(),
+                            method: "post",
+                            success: function (response) {
+                                alert("Form submitted successfully")
+                                window.location.reload()
+                                window.location.href="http://127.0.0.1:5500/index.html"
+                            },
+                            error: function (err) {
+                                alert("Something Error")
+                            }
+                        })
+                    });
 
+                // IMPORTANT: The 'token' that results from execute is an encrypted response sent by
+                // reCAPTCHA Enterprise to the end user's browser.
+                // This token must be validated by creating an assessment.
+                // See https://cloud.google.com/recaptcha-enterprise/docs/create-assessment
 
-  });
-
-
-           
+            });
         })
     </script>
 </body>
-
 </html>
