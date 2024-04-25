@@ -33,3 +33,679 @@ button {
       }
 }
 
+
+* {
+  margin: 0;
+  font-family: 'Be Vietnam Pro';
+  box-sizing: border-box;
+}
+
+.privacy-container {
+  padding: 80px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.privacy-content {
+  width: 60%;
+  margin-bottom: 35px;
+  margin-top: 85px;
+}
+
+.privacy-heading {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.privacy-description {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-size: 14px;
+  color: #333;
+  margin-top: 10px;
+  line-height: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .privacy-content {
+      width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .privacy-container {
+      padding-top: 35px;
+  }
+  .privacy-content {
+      width: 90%;
+  }
+  .privacy-description {
+      margin-top: 5px;
+      line-height: 25px;
+  }
+}
+
+
+/*  */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Be Vietnam Pro", "sans-serif";
+  scroll-behavior: smooth;
+}
+
+.home-page-container {
+  position: relative;
+  width: 100%;
+}
+
+.app-button-link {
+  text-decoration: none !important;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f1f1;
+  height: 15vh;
+  width: 100%;
+  padding: 20px 40px;
+  position: fixed;
+  top: 0px;
+}
+
+.nav-logo {
+  width: 100px;
+}
+
+.navbar-menu-list {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  list-style-type: none;
+}
+
+.navbar-item {
+  margin-left: 36px;
+}
+
+.navbar-links {
+  text-decoration: none;
+  color: #222222;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.landing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 90vh;
+  background-color: #f1f1f1;
+  padding: 140px 10%;
+}
+
+@media screen and (min-width: 1280px) {
+  .landing-container {
+    margin-top: 15vh;
+  }
+}
+
+.menu-button {
+  padding: 0px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-navbar {
+  display: none;
+}
+
+.nav-footer {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.nav-footer-heading {
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+.heading {
+  text-align: center;
+  font-family: Be Vietnam Pro, sans-serif;
+  font-size: 76px;
+  font-weight: 600;
+  line-height: 98px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  color: #de4c17;
+}
+
+.button-wrapper {
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  padding-bottom: 0;
+  display: flex;
+}
+
+.app-button {
+  width: 221px;
+  height: 65px;
+  background-color: #de4c17;
+  border-radius: 50px;
+  border: none;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  outline: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.internship-button {
+  height: 40px;
+  font-size: 18px;
+  width: 200px;
+  margin: 0;
+}
+
+.app-icon {
+  color: #f1f1f1;
+  font-size: 35px;
+  margin-right: 20px;
+}
+
+.play-store {
+  font-size: 27px;
+}
+
+.features-container {
+  padding: 33px;
+  background-color: #e5f5f5;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.features-wrapper {
+  padding-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feature-img {
+  width: 49%;
+  border-radius: 20px;
+  height: 100%;
+}
+
+.feature-content {
+  width: 49%;
+  padding: 35px;
+}
+
+.feature-heading {
+  font-size: 35px;
+  font-weight: 700;
+  font-family: "Varela Round", "sans-serif";
+  color: #3d3d48;
+}
+
+.feature-description {
+  font-size: 20px;
+  line-height: 2;
+  color: #000000;
+  margin-top: 20px;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #f1f1f1;
+  padding-top: 60px;
+}
+
+.footer-social-media {
+  display: flex;
+  margin-top: 20px;
+  width: 80%;
+  margin-bottom: 50px;
+}
+
+.social-icon {
+  color: #000000;
+  font-size: 21px;
+  margin-right: 23px;
+}
+
+.social-icon-nav {
+  color: #ffffff;
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.footer-links {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+.footer-link-heading {
+  color: #3a4554;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.footer-link {
+  color: #3a4554;
+  margin-left: 24px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.burger {
+  display: none !important;
+}
+
+.close-icon {
+  color: white !important;
+  font-size: 28px !important;
+}
+
+.contact-form-container {
+  position: fixed;
+  top: 0vh;
+  margin-top: 15vh;
+  height: 85vh;
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000035;
+  backdrop-filter: blur(3px);
+  z-index: 100;
+}
+
+.active {
+  display: flex;
+}
+
+.contact-form-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.contact-form-wrapper {
+  width: 40%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.contact-form-heading {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form-input {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #d4cfcf;
+  margin-bottom: 20px;
+  padding: 0px 10px;
+  outline: none;
+  font-size: 16px;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 20px;
+}
+
+.contact-form-textarea {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #d4cfcf;
+  margin-bottom: 20px;
+  padding: 10px;
+  outline: none;
+  font-size: 16px;
+}
+
+.contact-form-button {
+  width: 150px;
+  height: 40px;
+  background-color: #de4c17;
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  align-self: flex-start;
+}
+
+.app-download-link {
+  background: #00000099;
+  color: #fff;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-download-link span {
+  color: #de4c17;
+}
+
+.download-btn-container .download-btn {
+  background: transparent;
+  display: none;
+  border: none;
+  outline: none;
+}
+
+.download-btn-container img {
+  width: 60px;
+  height: 60px;
+}
+
+.mobile-number-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  color: rgb(153 153 153 / 1);
+  font-size: 16px;
+  height: 30px;
+  padding-left: 5px;
+  gap: 10px;
+}
+
+.mobile-number-input h4 {
+  font-size: 12px;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.mobile-number-input input {
+  height: 100%;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.submit-btn {
+  height: 100%;
+  background: #de4c17;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  padding: 0px 15px;
+}
+
+.icon {
+  height: 2rem;
+  width: 2rem;
+  margin-right: 1rem;
+  color: white;
+}
+
+.text {
+  color: white;
+}
+
+.toast {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 40px;
+  background-color: black;
+  border-radius: 12px;
+  padding: 0.5rem 1rem;
+  border: 5px solid #029c91;
+}
+
+.hide-toast {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-menu-list {
+    display: none;
+  }
+
+  .navbar {
+    padding: 20px 25px;
+    height: 10vh;
+  }
+
+  .break {
+    display: none;
+  }
+
+  .nav-logo {
+    width: 60px;
+    height: 50px;
+  }
+
+  .burger {
+    display: block !important;
+    cursor: pointer;
+    color: #222222;
+    font-size: 25px;
+  }
+
+  .menu-button {
+    display: block !important;
+  }
+
+  .mobile-navbar {
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: flex-start;
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #de4c17;
+    z-index: 1000;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .mobile-navbar-menu-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40%;
+    list-style-type: none;
+    padding-left: 0px;
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .mobile-navbar-links {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  .mobile-navbar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    background-color: #00000020;
+    backdrop-filter: blur(1px);
+  }
+
+  .mobile-navbar-hidden {
+    /* display: none!important; */
+    transform: translateX(100%);
+  }
+
+  .heading {
+    font-size: 46px;
+    line-height: 55px;
+  }
+  .landing-container {
+    padding: 50px 10px;
+    margin-top: 10vh;
+  }
+  .features-wrapper {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+  .features-container {
+    padding: 20px;
+  }
+  .feature-img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .feature-heading {
+    font-size: 25px;
+  }
+  .feature-content {
+    width: 100%;
+    padding: 0px;
+  }
+  .feature-description {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .footer {
+    padding-top: 25px;
+  }
+
+  .footer-social-media {
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+
+  .footer-social-media-nav {
+    margin-bottom: 0px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0px;
+    width: 100%;
+  }
+
+  .footer-link-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0px 20px;
+    margin-bottom: 10px;
+  }
+
+  .footer-link-heading {
+    margin-bottom: 20px;
+    margin-left: 0px;
+    order: 2;
+    text-align: center;
+  }
+
+  .footer-link {
+    margin-bottom: 10px;
+    margin-left: 0px;
+  }
+
+  .contact-form-heading {
+    font-size: 25px;
+  }
+
+  .contact-form-container {
+    margin-top: 10vh;
+    height: 90vh;
+  }
+
+  .contact-form-wrapper {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .contact-form-button {
+    width: 100%;
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .app-download-link {
+    display: none;
+  }
+}
