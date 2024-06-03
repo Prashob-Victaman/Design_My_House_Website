@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Be Vietnam Pro"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/c5eb76d5b1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="termsstyle.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="Home">
+      <div class="container-fluid">
+        <div class="container">
+          <a class="navbar-brand" href="/index.html">
+            <img src="DMH-Logo.png" alt="Bootstrap" width="300" height="80" />
+          </a>
+        </div>
+        <!-- <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Contact">Contact</a>
+              </li>
+            </ul>
+          </div> -->
+      </div>
+    </nav>
+    <!-- <nav class="navbar">
+        <a href="../index.html" id="navbar-logo">
+          <img src="../logo_splashscreen.png" alt="website logo" class="nav-logo" />
+        </a>
+        <ul class="navbar-menu-list">
+          <li class="navbar-item" id="internshipLink">
+            <button class="app-button internship-button">
+              Apply for Internship
+            </button>
+          </li>
+          <li class="navbar-item">
+            <a href="../index.html" class="navbar-links" id="home-page">Home</a>
+          </li>
+          <li class="navbar-item">
+            <a href="../index.html#Host" class="navbar-links">Host</a>
+          </li>
+          <li class="navbar-item">
+            <a href="../index.html#Guest" class="navbar-links" id="contact">Guest</a>
+          </li>
+          <li class="navbar-item">
+            <a href="../index.html#Meetings" class="navbar-links" id="contact">Meetings</a>
+          </li>
+          <li class="navbar-item">
+            <a href="./About.html" class="navbar-links" id="contact"
+              >About</a
+            >
+          </li>
+        </ul>
+        <button class="menu-button" id="menu-button">
+          <i class="fa-solid fa-bars burger"></i>
+        </button>
+      </nav>
+      <div class="">
+        <div id="mobile-navbar-overlay"></div>
+        <div class="mobile-navbar mobile-navbar-hidden" id="mobile-navbar">
+          <button class="menu-button" id="close-button">
+            <i class="fa-solid fa-xmark burger close-icon"></i>
+          </button>
+          <ul class="mobile-navbar-menu-list">
+            <li class="mobile-navbar-item">
+              <a href="../index.html#Home" class="mobile-navbar-links" id="home-page">Home</a>
+            </li>
+            <li class="mobile-navbar-item">
+              <a href="../index.html#Host" class="mobile-navbar-links">Host</a>
+            </li>
+            <li class="mobile-navbar-item">
+              <a href="../index.html#Guest" class="mobile-navbar-links" id="contact">Guest</a>
+            </li>
+            <li class="mobile-navbar-item">
+              <a href="../index.html#Meetings" class="mobile-navbar-links" id="contact"
+                >Meetings</a
+              >
+            </li>
+            <li class="mobile-navbar-item">
+              <a
+                href="./About.html"
+                class="mobile-navbar-links"
+                id="contact"
+                >About</a
+              >
+            </li>
+            <li class="mobile-navbar-item">
+              <a class="mobile-navbar-links" id="mobileInternshipLink"
+                >Apply for Internship
+              </a>
+            </li>
+          </ul>
+          <div class="nav-footer">
+            <h1 class="nav-footer-heading">Follow us at:</h1>
+            <div class="footer-social-media-nav">
+              <a href="https://www.linkedin.com/goformeet" target="_blank"
+                ><i class="fa-brands fa-linkedin social-icon-nav"></i
+              ></a>
+              <a href="https://www.youtube.com/@goformeet" target="_blank"
+                ><i class="fa-brands fa-youtube social-icon-nav"></i
+              ></a>
+              <a href="https://www.facebook.com/goformeet" target="_blank"
+                ><i class="fa-brands fa-facebook social-icon-nav"></i
+              ></a>
+              <a href="https://www.instagram.com/goformeet" target="_blank"
+                ><i class="fa-brands fa-instagram social-icon-nav"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-container" id="internshipFormContainer">
+        <div class="contact-form-overlay" id="overlay"></div>
+        <div class="contact-form-wrapper">
+          <h1 class="contact-form-heading">Apply for Internship</h1>
+          <form class="contact-form" id="internshipForm">
+            <input
+              type="text"
+              name="name"
+              id="internshipName"
+              placeholder="Name"
+              class="contact-form-input"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              id="internshipEmail"
+              placeholder="Email"
+              class="contact-form-input"
+              required
+            />
+            <input
+              type="number"
+              name="phone"
+              id="internshipNumber"
+              placeholder="Phone Number"
+              class="contact-form-input"
+              required
+            />
+            <select
+              name="qualification"
+              title="Qualification"
+              id="internshipQualification"
+              placeholder="Qualification"
+              class="contact-form-input"
+            >
+              <option value="10th Class">10th Class</option>
+              <option value="+2 pass">+2 Pass</option>
+              <option value="pursuing bachelor's degree">
+                Pursuing Bachelor's Degree
+              </option>
+              <option value="pursuing master's degree">
+                Pursuing Master's Degree
+              </option>
+              <option value="bachelor's degree">Bachelor's Degree</option>
+              <option value="master's degree">Master's Degree</option>
+            </select>
+            <input
+              type="text"
+              name="currentadress"
+              id="currentAddress"
+              placeholder="Current Address"
+              class="contact-form-input"
+              required
+            />
+            <input
+              type="number"
+              name="phone"
+              id="emergencyNumber"
+              placeholder="Emergency Number"
+              class="contact-form-input"
+              required
+            />
+            <div class="buttons-container">
+              <button
+                type="button"
+                id="internshipSubmitButton"
+                class="contact-form-button"
+              >
+                Submit
+              </button>
+              <button
+                type="button"
+                id="internshipCloseButton"
+                class="contact-form-button"
+              >
+                Close
+              </button>
+            </div>
+          </form>
+        </div>
+      </div> -->
+    <div class="privacy-container">
+      <div class="privacy-content">
+        <h1 class="privacy-heading">Privacy Policy</h1>
+        <p class="privacy-description">
+          1. Instead of processing the delivery from the Architect on time, if not delivered, the User will start seeing the option of refund. From there, the User can send their refund request to DMH by completing the process.
+
+          <br>  <br>        2. Even after payment, for any reason, the Architect can also cancel the order. In such a situation, the user will start seeing the option of refund instead of processing. From there, the User can send their refund request to DMH by completing the process.
+
+
+<br>   <br>         3. After making the payment, the User will not receive any option. Thus, there will be no option for Cancel (Refund) request. If still, the user wants to Cancel (Refund), then he can ask his Architect for this. And he will fill the form on accuracy that whether he will refund or not.
+        </p>
+      </div>
+      <!-- <div class="privacy-content">
+        <h1 class="privacy-heading">Collection of Personal Information</h1>
+        <p class="privacy-description">
+          The Site's registration form requires users to give us contact
+          information (such as name and email address) and demographic
+          information and other information that is used by us to provide
+          services. We use the customer contact information from the
+          registration form to send the user information that he or she has
+          requested regarding the Site or regarding services offered by us
+          Contact information provided may be used to contact customers when
+          necessary Demographic and profile data is also collected at the Site.
+          Our online surveys ask visitors for contact information (such as email
+          addresses) and demographic information.
+        </p>
+      </div>
+      <div class="privacy-content">
+        <h1 class="privacy-heading">Your Information</h1>
+        <p class="privacy-description">
+          Design My House does not sell or rent personal information regarding our
+          clients and their customers to any third party. The provision of your
+          personal and or organization information regarding yourself and
+          including any information on your clients and or customers will only
+          be used for the purpose of providing to you and administering our
+          products and services. Design My House will seek your permission to send
+          you further communications at the time you provide us with your
+          personal information. If at any time after submitting your personal
+          information to Design My House you would no longer like to receive
+          information from us, simply follow the 'unsubscribe' directions at the
+          end of any e-mail communications you receive. No attempt will be made
+          to identify users or their browsing activities except in the unlikely
+          event of an investigation, where a law enforcement agency may exercise
+          a warrant to inspect server logs. The statistics and log files may be
+          preserved indefinitely and used at any time and in any way necessary
+          to prevent security breaches and to ensure the integrity of the
+          information supplied by Design My House. In general, on Design My House
+          websites, IP addresses (a number that is unique to the computer
+          through which you are connected to the internet) are logged to track a
+          user's session while the user remains anonymous. We analyze this data
+          for certain trends and statistics, such as which parts of our site
+          users are visiting and how long they spend there. In general, we do
+          not link your IP addresses to anything personally identifiable to you.
+          In those limited cases where session information is not anonymous,
+          Design My House will provide notice of the practice and an opportunity to
+          'opt out.' When Design My House receives information about your session or
+          about you, we may also use it for research or to improve our site and
+          the services we offer you. Design My House does not sell or rent personal
+          information regarding our clients and their customers to any third
+          party. The provision of your personal and or organization information
+          regarding yourself and including any information on your clients and
+          or customers will only be used for the purpose of providing to you and
+          administering our products and services. Design My House will seek your
+          permission to send you further communications at the time you provide
+          us with your personal information. If at any time after submitting
+          your personal information to Design My House you would no longer like to
+          receive information from us, simply follow the 'unsubscribe'
+          directions at the end of any e-mail communications you receive. No
+          attempt will be made to identify users or their browsing activities
+          except in the unlikely event of an investigation, where a law
+          enforcement agency may exercise a warrant to inspect server logs. The
+          statistics and log files may be preserved indefinitely and used at any
+          time and in any way necessary to prevent security breaches and to
+          ensure the integrity of the information supplied by Design My House. In
+          general, on Design My House websites, IP addresses (a number that is
+          unique to the computer through which you are connected to the
+          internet) are logged to track a user's session while the user remains
+          anonymous. We analyze this data for certain trends and statistics,
+          such as which parts of our site users are visiting and how long they
+          spend there. In general, we do not link your IP addresses to anything
+          personally identifiable to you. In those limited cases where session
+          information is not anonymous, Design My House will provide notice of the
+          practice and an opportunity to 'opt out.' When Design My House receives
+          information about your session or about you, we may also use it for
+          research or to improve our site and the services we offer you. We at
+          DesignMyHouse.app ("Design My House," "we," "us," or "our") know that our
+          customers ("you," "your," or "yourself") care about how your personal
+          information is used and shared, and we take your privacy very
+          seriously. Please read the following to learn more about our Privacy
+          Policy. By visiting or using the www.DesignMyHouse.app website and
+          domain name, any other linked pages, content and any other services we
+          offer from time to time in connection with any of the foregoing
+          (collectively, the "Website"), you agree to the practices and policies
+          set forth in this Privacy Policy, and you hereby acknowledge and
+          consent to our collection and use of your information as described in
+          this Privacy Policy. we will not collect any information about you
+          that we do not need to make your experience at Design My House delightful
+          and will always protect all information about you. We comply with the
+          privacy laws in all regions that we operate in and do more to keep
+          your information confidential. We do everything we reasonably can to
+          protect your rights of privacy on systems and the Website controlled
+          by us, but we are not liable for any unauthorized or unlawful
+          disclosures of your personal and confidential information made by
+          third parties who are not subject to our control, for example,
+          advertisers and websites that have links to our Website. You should
+          take note that the information and privacy practices of our business
+          partners, advertisers, sponsors or other sites to which we provide
+          hyperlinks, may be different from ours. This privacy policy is subject
+          to change at any time without notice. To make sure you are aware of
+          any changes, please review this document periodically.
+        </p>
+      </div>
+     
+      <div class="privacy-content">
+        <h1 class="privacy-heading">WHAT WE COLLECT</h1>
+        <p class="privacy-description">
+          When you register on Design My House, we collect some information about
+          you, to complete your profile on Design My House. This may include some or
+          all of the following: Information about your personal identity such as
+          gender, age, preferences, likes, and dislikes etc. Your contact
+          details such as your physical addresses, postal addresses, telephone
+          numbers etc. We only collect your Personal Information to conduct our
+          business and to enable us to deliver and improve our Services. We do
+          not for any reason whatsoever sell your Personal Information to any
+          third party or otherwise trade on it.
+        </p>
+      </div>
+     
+      <div class="privacy-content">
+        <h1 class="privacy-heading">WE DO NOT SHARE YOUR INFORMATION</h1>
+        <p class="privacy-description">
+          We will only disclose your Personal Information in accordance with
+          this Privacy Policy. If we want to use it for any other purpose, we
+          will obtain your prior written consent. If you decline to submit
+          personal information to us, then we will unfortunately not be in a
+          position to provide the Services to you. Any of your information which
+          you provide when you use certain Services and are to an open, public
+          environment or forum including (without limitation) any blog,
+          community or discussion board, is not confidential, does not
+          constitute Personal Information, and is not subject to protection
+          under Privacy Policy. Since such public environments are accessible by
+          third parties, it is possible that third parties may collect and
+          collate and use such information for their own purposes. You should
+          accordingly be careful when deciding to share any of your Personal
+          Information in such public environments. Information, which is
+          disclosed publicly, is also shared with our affiliates, third party
+          service providers, sponsors of competitions etc. unless expressly
+          stated otherwise. We are not liable to you or any third party for any
+          damages that you or any third party may suffer howsoever arising from
+          your disclosure of Personal Information in any public environment. You
+          accordingly disclose information in a public environment at your own
+          risk..
+        </p>
+      </div>
+      <div class="privacy-content">
+        <h1 class="privacy-heading">WHY WE NEED WHAT WE COLLECT</h1>
+        <p class="privacy-description">
+          We collect your Profiling and Account Information for the following
+          reasons: (a) We need your identity details, contact details, banking
+          information and account history to manage our relationship with you
+          and provide Services to you. We may use this information for
+          suggesting products and promotional offers and schemes. We will only
+          disclose this information as provided below. (b) We use certain of
+          your information in an aggregated form to compile statistical and
+          demographical profiles for our business and marketing activities. We
+          may disclose such information about you, provided that the information
+          is in an aggregated form that is not capable of being used or
+          interpreted in such a manner as to identify you. We collect and store
+          your Service Usage and Transactional Information to: (a) determine and
+          verify the Service Charges payable by you and to administer our
+          relationship with you. (b) comply with any statutory or regulatory
+          requirement. (c) compile statistical and demographical profiles about
+          you for our business and marketing activities and to customise our
+          Services to you. While we are entitled to use such information about
+          you for our own internal business purposes without limitation, we will
+          only disclose it in an aggregated form which is not capable of being
+          used or interpreted in such a manner as to identify you; and (d)
+          monitor your use of our Services for the purposes of ensuring
+          compliance with our Terms of Service. We collect and store your
+          Correspondence Information and Personal Identifiers to: (a) comply
+          with our obligations under the law; and (b) monitor your use of our
+          Services in order to ensure your compliance with our Terms of Service.
+        </p>
+      </div>
+      <div class="privacy-content">
+        <h1 class="privacy-heading">
+          WHEN WE MAY NEED TO DISCLOSE YOUR INFORMATION
+        </h1>
+        <p class="privacy-description">
+          If we are required to intercept, disclose, monitor and/or store your
+          Personal Information: (a) by law (b) to conduct our business (c) to
+          secure our systems and ensure the privacy of our users (d) to enforce
+          our own rights, we will do so in the manner as prescribed by law. Such
+          interception, disclosure, monitoring, and storage may take place
+          without your knowledge. In that case, we will not be liable to you or
+          any third party for any damages howsoever arising from such
+          interception, disclosure, monitoring, and storage. In order to ensure
+          that all our Users comply with the Terms of Service, we may monitor
+          your Personal Information to the extent that this may be required to
+          determine compliance and/or to identify instances of non-compliance.
+          To ensure that the security and integrity of our Services are
+          safeguarded, we may monitor your Personal Information. This monitoring
+          may include (without limitation) the filtering of incoming and
+          outgoing electronic data messages to identify, limit and/or prevent
+          the transmission of spam, viruses and/or unlawful, defamatory, obscene
+          or otherwise undesirable material or content. We may under certain
+          circumstances procure an element of the Services from a third party
+          service provider. To the extent that it may be necessary, and solely
+          for the purposes of providing the Service to you, you agree that we
+          may disclose to such third party any of your Personal Information that
+          may be necessary for the procurement of services from the third party.
+          .
+        </p>
+      </div> -->
+      <!-- <div class="privacy-content">
+        <h1 class="privacy-heading">Copyright Infringement Claims</h1>
+        <p class="privacy-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque veniam
+          repellat ipsum. Tempora eos beatae qui doloremque quae, vitae debitis
+          repudiandae libero molestias! Cumque architecto quod culpa animi
+          repellat. Iste dolor assumenda quas doloribus expedita. Veritatis
+          neque labore ab delectus, officiis corrupti nostrum id sequi maxime
+          doloremque ratione? Iure, obcaecati.
+        </p>
+      </div>
+      <div class="privacy-content">
+        <h1 class="privacy-heading">External Links and Services</h1>
+        <p class="privacy-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque veniam
+          repellat ipsum. Tempora eos beatae qui doloremque quae, vitae debitis
+          repudiandae libero molestias! Cumque architecto quod culpa animi
+          repellat. Iste dolor assumenda quas doloribus expedita. Veritatis
+          neque labore ab delectus, officiis corrupti nostrum id sequi maxime
+          doloremque ratione? Iure, obcaecati.
+        </p>
+      </div>
+      <div class="privacy-content">
+        <h1 class="privacy-heading">Limitation of Liability and Disputes</h1>
+        <p class="privacy-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque veniam
+          repellat ipsum. Tempora eos beatae qui doloremque quae, vitae debitis
+          repudiandae libero molestias! Cumque architecto quod culpa animi
+          repellat. Iste dolor assumenda quas doloribus expedita. Veritatis
+          neque labore ab delectus, officiis corrupti nostrum id sequi maxime
+          doloremque ratione? Iure, obcaecati.
+        </p>
+      </div>
+      <div class="privacy-content">
+        <h1 class="privacy-heading">Indemnity</h1>
+        <p class="privacy-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque veniam
+          repellat ipsum. Tempora eos beatae qui doloremque quae, vitae debitis
+          repudiandae libero molestias! Cumque architecto quod culpa animi
+          repellat. Iste dolor assumenda quas doloribus expedita. Veritatis
+          neque labore ab delectus, officiis corrupti nostrum id sequi maxime
+          doloremque ratione? Iure, obcaecati.
+        </p>
+      </div>
+      <div class="privacy-content">
+        <h1 class="privacy-heading">Disclaimers</h1>
+        <p class="privacy-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque veniam
+          repellat ipsum. Tempora eos beatae qui doloremque quae, vitae debitis
+          repudiandae libero molestias! Cumque architecto quod culpa animi
+          repellat. Iste dolor assumenda quas doloribus expedita. Veritatis
+          neque labore ab delectus, officiis corrupti nostrum id sequi maxime
+          doloremque ratione? Iure, obcaecati.
+        </p>
+      </div>
+      <div class="privacy-content">
+        <h1 class="privacy-heading">Advertising and External Links</h1>
+        <p class="privacy-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque veniam
+          repellat ipsum. Tempora eos beatae qui doloremque quae, vitae debitis
+          repudiandae libero molestias! Cumque architecto quod culpa animi
+          repellat. Iste dolor assumenda quas doloribus expedita. Veritatis
+          neque labore ab delectus, officiis corrupti nostrum id sequi maxime
+          doloremque ratione? Iure, obcaecati.
+        </p>
+      </div>
+      <div class="privacy-content">
+        <h1 class="privacy-heading">Miscellaneous</h1>
+        <p class="privacy-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque veniam
+          repellat ipsum. Tempora eos beatae qui doloremque quae, vitae debitis
+          repudiandae libero molestias! Cumque architecto quod culpa animi
+          repellat. Iste dolor assumenda quas doloribus expedita. Veritatis
+          neque labore ab delectus, officiis corrupti nostrum id sequi maxime
+          doloremque ratione? Iure, obcaecati.
+        </p>
+      </div>
+    </div> -->
+    <!-- <footer class="footer"> -->
+      <!-- <div class="footer-social-media">
+        <a href="https://www.linkedin.com/goformeet" target="_blank"
+          ><i class="fa-brands fa-linkedin social-icon"></i
+        ></a>
+        <a href="https://www.youtube.com/@goformeet" target="_blank"
+          ><i class="fa-brands fa-youtube social-icon"></i
+        ></a>
+        <a href="https://www.facebook.com/goformeet" target="_blank"
+          ><i class="fa-brands fa-facebook social-icon"></i
+        ></a>
+        <a href="https://www.instagram.com/goformeet" target="_blank"
+          ><i class="fa-brands fa-instagram social-icon"></i
+        ></a>
+      </div> -->
+      <!-- <div class="footer-links">
+        <p class="footer-link-heading">
+          © Goformeet Consulting Private Limited
+        </p>
+        <div class="footer-link-wrapper">
+          <a href="/RefundPolicy/index.html" class="footer-link"
+            >Refund Policy</a
+          >
+           <a href="" class="footer-link">Support</a> 
+          <a href="/TermsPage/index.html" class="footer-link">Terms</a>
+          <a href="/PrivacyPage/index.html" class="footer-link">Privacy</a>
+          <a id="careersLink" class="footer-link">Careers</a>
+          <a href="/StoriesPage/index.html" class="footer-link">Stories</a>
+          <a class="footer-link" id="contact-link">Contact</a>
+        </div>
+      </div> -->
+    <!-- </footer> -->
+    <div class="contact-form-container" id="careersFormContainer">
+      <div class="contact-form-overlay" id="overlay"></div>
+      <div class="contact-form-wrapper">
+        <h1 class="contact-form-heading">Apply for Freelance Job</h1>
+        <form class="contact-form" id="internshipForm">
+          <input
+            type="text"
+            name="name"
+            id="careersName"
+            placeholder="Name"
+            class="contact-form-input"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            id="careersEmail"
+            placeholder="Email"
+            class="contact-form-input"
+            required
+          />
+          <input
+            type="number"
+            name="phone"
+            id="careersPhoneNumber"
+            placeholder="Phone Number"
+            class="contact-form-input"
+            required
+          />
+          <select
+            name="qualification"
+            title="Qualification"
+            id="careersQualification"
+            placeholder="Qualification"
+            class="contact-form-input"
+          >
+            <option value="10th Class">10th Class</option>
+            <option value="+2 pass">+2 Pass</option>
+            <option value="pursuing bachelor's degree">
+              Pursuing Bachelor's Degree
+            </option>
+            <option value="pursuing master's degree">
+              Pursuing Master's Degree
+            </option>
+            <option value="bachelor's degree">Bachelor's Degree</option>
+            <option value="master's degree">Master's Degree</option>
+          </select>
+          <input
+            type="text"
+            name="profession"
+            id="careersProfession"
+            placeholder="Profession"
+            class="contact-form-input"
+            required
+          />
+          <input
+            type="text"
+            name="currentadress"
+            id="careersAddress"
+            placeholder="Current Address"
+            class="contact-form-input"
+            required
+          />
+          <input
+            type="number"
+            name="phone"
+            id="careersEmergencyNumber"
+            placeholder="Emergency Number"
+            class="contact-form-input"
+            required
+          />
+          <div class="buttons-container">
+            <button
+              type="button"
+              id="careersSubmitButton"
+              class="contact-form-button"
+            >
+              Submit
+            </button>
+            <button
+              type="button"
+              id="careersCloseButton"
+              class="contact-form-button"
+            >
+              Close
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- <div class="contact-form-container" id="form-container">
+        <div class="contact-form-overlay" id="overlay"></div>
+        <div class="contact-form-wrapper">
+          <h1 class="contact-form-heading">Contact Us</h1>
+          <div class="contact-form">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+              class="contact-form-input"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              class="contact-form-input"
+              required
+            />
+            <input
+              type="number"
+              name="phone"
+              id="phone"
+              placeholder="Phone Number"
+              class="contact-form-input"
+              required
+            />
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Your Message"
+              rows="6"
+              class="contact-form-textarea"
+              required
+            ></textarea>
+            <div class="buttons-container">
+            <button
+              type="button"
+              id="submit-button"
+              class="contact-form-button"
+            >
+              Submit
+            </button>
+            <button
+              type="button"
+              id="contactCloseButton"
+              class="contact-form-button"
+            >
+              Close
+            </button>
+          </div>
+          </form>
+        </div>
+      </div>
+    </div> -->
+    <!-- <div class="app-download-link">
+      <div>
+        <h4>Get Link in SMS to download <span>Goformeet</span> App</h4>
+        <p>Download Goformeet, For Guaranteed Meetings!</p>
+      </div>
+      <div class="download-btn-container">
+        <div class="mobile-number-input">
+          <h4>+91</h4>
+          <input
+            type="text"
+            id="mobileNumber"
+            name="mobile Number"
+            placeholder="Mobile Number *"
+            required
+          />
+          <button type="button" class="submit-btn" id="submitBtn">
+            Submit
+          </button>
+        </div>
+      </div>
+    </div> -->
+    <div class="toast hide-toast" id="toast">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        class="icon"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+        />
+      </svg>
+      <p class="text">Message sent</p>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
